@@ -13,6 +13,7 @@ const usersRoutes = require("./routes/usersRoutes");
 const planRoutes = require("./routes/planRoutes");
 const notificationRoutes = require("./routes/notificationRoutes");
 const conversationRoutes = require("./routes/conversationRoutes");
+const planServiceRoutes = require("./routes/planServiceRoutes");
 
 // Use morgan with "dev" format - this will give you the exact logging you want
 app.use(morgan("dev"));
@@ -32,6 +33,7 @@ app.use("/users", usersRoutes);
 app.use("/plans", planRoutes);
 app.use("/notifications", notificationRoutes);
 app.use("/conversations", conversationRoutes);
+app.use("/plan-services", planServiceRoutes);
 
 const hostname = process.env.HOST || "0.0.0.0";
 const port = process.env.PORT || 5000;

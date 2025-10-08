@@ -21,4 +21,5 @@ router.patch('/:id/status', planController.updatePlanStatus);
 // Delete plan
 router.delete('/:id', planController.deletePlan);
 
+
 module.exports = router;
